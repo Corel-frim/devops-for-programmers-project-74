@@ -1,6 +1,7 @@
-FROM node:14.18.1-slim
+FROM node
 
 RUN apt-get update && apt-get install -yq make
+RUN npm install -g npm@9.7.2
 
 WORKDIR /app
 
